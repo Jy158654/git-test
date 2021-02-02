@@ -1,166 +1,184 @@
 /* universal setting */
 
-*{
-    padding: 0;
-    margin: 0;
-}
-
-html,
-body,
-.container{
-    height: 100vh;
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
 }
 
 /* header */
-
-nav{
-    padding-top: 20px;
-    padding-bottom: 20px;
-    background: #66cdaa;
+nav {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background: #0d1323;
 }
 
-ul li{
-    display: inline-block;
-    margin-left: 20px;
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+ul li {
+  display: inline-block;
+  margin: 0 7em;
 }
 
-ul li a{
-    text-decoration: none;
-    color: black;
+ul li a {
+  text-decoration: none;
+  color: #fff;
 }
 
-ul li a:hover{
-    text-decoration: underline;
-    color: dodgerblue;
+ul li a:hover {
+  border-bottom: solid 1px #6497b1;
 }
 
 /* introduction */
 
-.introduction{
-    background: #f9f9f9;
-    padding-bottom: 10px;
+.introduction {
+  padding-bottom: 10px;
+  color: #f4f4f4;
+  height: 100vh;
+  background: url("./img/pexels-spacex-23764.jpg") no-repeat center center/cover;
 }
 
-.Elon-Musk-photo img{
-    width: 110px;
-    height: 110px;
-    border-radius: 100%;
-    float: left;
-    margin: 0 20px 20px 20px;
+.Elon-Musk-photo img {
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  margin: 0 auto;
 }
 
-.Name{
-    text-align: center;
-    margin-bottom: 10px;
+.Name {
+  text-align: center;
+  margin-bottom: 10px;
 }
 
-.introduction-description p{
-    font-size: 16px;
+.introduction-description p {
+  font-size: 16px;
+  line-height: 1.8rem;
+  padding: 20px;
 }
 
-.des2 h2{
-    width: 100%;
-    text-align: center;
-    font-size: 30px;
-    font-family: "Coda Caption", serif;
-    background: #dda0dd;
+.des2 h2 {
+  width: 100%;
+  color: black;
+  text-align: center;
+  font-size: 30px;
+  font-family: "Coda Caption", serif;
+  background: #dda0dd;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 4em;
+}
+.grid-container {
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+  margin-top: 20px;
 }
 
 /* timeline */
 
-.timeline .timeline-word{
-    font-size: 80px;
-    font-family: "Brush Script MT", serif;
-    position: relative;
-    left: 310px;
-    width: 1000px;
-    margin-top: 40px;
+.flex-container-2,
+.year {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.timeline .timeline-content{
-    position: relative;
-    left: 170px;
-    top: 40px;
-    font-family: Dosis, sans-serif;
-    width: 800px;
+.timeline .timeline-word {
+  font-size: 80px;
+  font-family: "Brush Script MT", serif;
+  position: relative;
+  margin-top: 40px;
+  margin-left: 6rem;
 }
+
+.timeline .timeline-content {
+  position: relative;
+  font-family: Dosis, sans-serif;
+  width: 800px;
+}
+
 .event-date-first-child,
-.event-date{
-    width: 120px;
-    float: left;
-    padding: 8px 12px 8px 8px;
-    text-align: center;
-    clear: left;
-    border-top: 1px solid #ccc;
-    font-weight: bold;
+.event-date {
+  width: 120px;
+  padding: 8px 12px 8px 8px;
+  text-align: center;
+  border-top: 1px solid #ccc;
+  font-weight: bold;
 }
 
 .event-des-first,
-.event-des{
-    width: 625px;
-    float: left;
-    background: #f9f9f9;
-    padding: 8px 12px 8px 8px;
-    border-top: 3px solid #ccc;
-    border-left: 1px solid #ccc;
-    border-right: 2px solid #ccc;
-    line-height: 26px;
+.event-des {
+  width: 625px;
+  background: #f9f9f9;
+  padding: 8px 12px 8px 8px;
+  border-top: 3px solid #ccc;
+  border-left: 1px solid #ccc;
+  border-right: 2px solid #ccc;
+  line-height: 26px;
 }
 
 /* About */
 
-
-.about{
-    float: right;
-    clear: right;
-    text-align: center;
-    font-family: Dosis, sans-serif;
+.about {
+  text-align: center;
+  font-family: Dosis, sans-serif;
+  align-self: flex-start;
+  margin-top: 14rem;
+  margin-left: 4em;
 }
 
-.about th img{
-    display: block;
-    width: 270px;
-    height: 210px;
-    margin: 10px auto;
-    border-radius: 15px;
+.about th img {
+  display: block;
+  width: 270px;
+  height: 210px;
+  margin: 10px auto;
+  border-radius: 15px;
 }
 
-.about #about-word{
-    font-size: 35px;
-    font-family: "Montserrat", sans-serif;
+.about #about-word {
+  font-size: 35px;
+  font-family: "Montserrat", sans-serif;
 }
 
-.about th{
-    font-weight: bold;
-    font-size: 15px;
+.about th {
+  font-weight: bold;
+  font-size: 15px;
 }
 
-.about td{
-    padding: 10px;
-    background: #f9f9f9;
-    border-bottom: 1px solid #ccc;
-    font-size: 14px;
-    width: 190px;
+.about td {
+  padding: 10px;
+  background: #f9f9f9;
+  border-bottom: 1px solid #ccc;
+  font-size: 14px;
+  width: 190px;
 }
 
- /*Footer*/
+/*Footer*/
 
 html,
 body,
-.container{
-    min-height: 100vh;
+.container {
+  min-height: 100em;
 }
 
-.content{
-    padding-bottom: 50px;
+.content {
+  padding-bottom: 50px;
 }
 
-.footer{
-    margin-top: -50px;
-    height: 50px;
-    clear: both;
-    text-align: center;
-    background: #dda0dd;
-    font-size: 18px;
-    padding-top: 18px;
+.footer {
+  margin-top: -50px;
+  height: 50px;
+  clear: both;
+  text-align: center;
+  background: #dda0dd;
+  font-size: 18px;
+  padding-top: 18px;
 }
